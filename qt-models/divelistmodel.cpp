@@ -4,6 +4,7 @@
 MobileDive::MobileDive(dive *d)
 {
 	m_thisDive = d;
+	setDiveId(QString::number(d->id));
 	setDiveNumber(QString::number(d->number));
 
 	dive_trip *trip = d->divetrip;
@@ -217,6 +218,17 @@ void MobileDive::setupDiveTempDetails()
 	setAirTemp(get_temperature_string(m_thisDive->airtemp, true));
 }
 
+QString MobileDive::diveId() const
+{
+	return m_diveId;
+}
+
+void MobileDive::setDiveId(const QString &diveId)
+{
+	m_diveId = diveId;
+}
+
+
 
 
 
@@ -283,6 +295,8 @@ QVariant DiveListModel::data(const QModelIndex &index, int role) const
 		return dive.buddy();
 	else if (role == DiveMasterRole)
 		return dive.divemaster();
+	else if (role == DiveIdRole)
+		return dive.diveId();
 	return QVariant();
 
 
@@ -308,6 +322,7 @@ QHash<int, QByteArray> DiveListModel::roleNames() const
 	roles[DiveNotesRole] = "notes";
 	roles[DiveBuddyRole] = "buddy";
 	roles[DiveMasterRole] = "divemaster";
+	roles[DiveIdRole] = "id";
 
 	return roles;
 }

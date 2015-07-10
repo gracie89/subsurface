@@ -44,6 +44,14 @@ ApplicationWindow {
 						manager.loadDives();
 					}
 				}
+
+				Button {
+					id: saveDivesButton
+					text: "Save Changes"
+					onClicked: {
+						manager.saveToCloud();
+					}
+				}
 			}
 
 		}

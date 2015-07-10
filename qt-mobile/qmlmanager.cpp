@@ -50,6 +50,29 @@ void QMLManager::loadDives()
 			DiveListModel::instance()->addDive(d);
 }
 
+void QMLManager::commitChanges(QString diveID, QString airtemp, QString watertemp, QString weight, QString suit, QString cylinder, QString notes, QString buddy, QString divemaster)
+{
+	struct dive *d = get_dive_by_uniq_id(diveID.toInt());
+	d->buddy = strdup(buddy.toUtf8().data());
+	d->suit = strdup(suit.toUtf8().data());
+	d->notes = strdup(notes.toUtf8().data());
+	d->divemaster = strdup(divemaster.toUtf8().data());
+}
+
+void QMLManager::saveToCloud()
+{
+	mark_divelist_changed(true);
+
+	QString url;
+	if (getCloudURL(url)) {
+		//TODO: Show error in QML
+		return;
+	}
+
+	QByteArray fileNamePtr = QFile::encodeName(url);
+	save_dives(fileNamePtr.data());
+}
+
 QString QMLManager::cloudPassword() const
 {
 	return m_cloudPassword;

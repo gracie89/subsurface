@@ -109,7 +109,20 @@ Rectangle {
 				opacity: dive.detailsOpacity
 				text: "Close"
 
-				onClicked: dive.state = '';
+				onClicked: {
+					manager.commitChanges(
+								id,
+								txtAirTemp.text,
+								txtWaterTemp.text,
+								"",
+								txtSuit.text,
+								"",
+								txtNotes.text,
+								txtBuddy.text,
+								txtDiveMaster.text
+								);
+					dive.state = '';
+				}
 			}
 
 			states: State {
