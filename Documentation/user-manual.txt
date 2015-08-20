@@ -2,7 +2,7 @@
 // ==========================
 // :author: Manual authors: Jacco van Koll, Dirk Hohndel, Reinout Hoornweg,
 // Linus Torvalds, Miika Turkia, Amit Chaudhuri, Jan Schubert, Willem
-// Ferguson, Salvador Cuñat, Pedro Neves
+// Ferguson, Salvador Cu??at, Pedro Neves
 // :revnumber: 4.4
 // :revdate: February 2015
 :icons:
@@ -16,7 +16,7 @@ image::images/Subsurface4Banner.jpg["Banner",align="center"]
 [big]#USER MANUAL#
 
 *Manual authors*: Willem Ferguson, Jacco van Koll, Dirk Hohndel, Reinout Hoornweg,
-Linus Torvalds, Miika Turkia, Amit Chaudhuri, Jan Schubert, Salvador Cuñat, Pedro Neves
+Linus Torvalds, Miika Turkia, Amit Chaudhuri, Jan Schubert, Salvador Cu??at, Pedro Neves
 
 [blue]#_Version 4.4,  February 2015_#
 
@@ -268,16 +268,16 @@ b. The coordinates can be obtained from the _Subsurface_ Companion app if the
 c. The coordinates can be entered by hand if they are known, using one of
    four formats with latitude followed by longitude:
 
-	ISO 6709 Annex D format e.g. 30°13'28.9"N 30°49'1.5"E
-	Degrees and decimal minutes, e.g. N30° 13.49760' , E30° 49.30788'
-	Degrees minutes seconds, e.g. N30° 13' 29.8" , E30° 49' 1.5"
+	ISO 6709 Annex D format e.g. 30??13'28.9"N 30??49'1.5"E
+	Degrees and decimal minutes, e.g. N30?? 13.49760' , E30?? 49.30788'
+	Degrees minutes seconds, e.g. N30?? 13' 29.8" , E30?? 49' 1.5"
 	Decimal degrees, e.g. 30.22496 , 30.821798
 
-Southern hemisphere latitudes are given with a *S*, e.g. S30°, or with a
+Southern hemisphere latitudes are given with a *S*, e.g. S30??, or with a
 negative value, e.g. -30.22496. Similarly western longitudes are given with a
-*W*, e.g. W07°, or with a negative value, e.g. -7.34323.
+*W*, e.g. W07??, or with a negative value, e.g. -7.34323.
 
-Some keyboards don't have the degree sign (°). It can be replaced by a d like
+Some keyboards don't have the degree sign (??). It can be replaced by a d like
 that: N30d W20d.
 
 Please note that GPS coordinates of a dive site are linked to the Location
@@ -751,14 +751,14 @@ b. The user can obtain the coordinates from the _Subsurface_ Companion app if
 c. The coordinates can be entered by hand if they are known, using one of
    four formats with latitude followed by longitude:
 
-	ISO 6709 Annex D format e.g. 30°13'28.9"N 30°49'1.5"E
-	Degrees and decimal minutes, e.g. N30° 13.49760' , E30° 49.30788'
-	Degrees minutes seconds, e.g. N30° 13' 29.8" , E30° 49' 1.5"
+	ISO 6709 Annex D format e.g. 30??13'28.9"N 30??49'1.5"E
+	Degrees and decimal minutes, e.g. N30?? 13.49760' , E30?? 49.30788'
+	Degrees minutes seconds, e.g. N30?? 13' 29.8" , E30?? 49' 1.5"
 	Decimal degrees, e.g. 30.22496 , 30.821798
 
-Southern hemisphere latitudes are given with a *S*, e.g. S30°, or with a
+Southern hemisphere latitudes are given with a *S*, e.g. S30??, or with a
 negative value, e.g. -30.22496. Similarly, western longitudes are given with a
-*W*, e.g. W07°, or with a negative value, e.g. -7.34323.
+*W*, e.g. W07??, or with a negative value, e.g. -7.34323.
 
 Please note that GPS coordinates of a dive site are linked to the Location
 name - so adding coordinates to dives that do not have a location description
@@ -1228,7 +1228,7 @@ after _Dive date_). If the field names in the first line are long, the alignment
 cannot be maintained. Here is a highly simplified and shortened TAB-delimited example of a _CSV_ dive log
 from an APD closed-circuit rebreather (CCR) dive computer:
 
-	Dive Time (s)	Depth (m)	pO₂ - Setpoint (Bar) 	pO₂ - C1 Cell 1 (Bar)	Ambient temp. (Celsius)
+	Dive Time (s)	Depth (m)	pO??? - Setpoint (Bar) 	pO??? - C1 Cell 1 (Bar)	Ambient temp. (Celsius)
 	0       0.0     0.70    0.81    13.1
 	0       1.2     0.70    0.71    13.1
 	0       0.0     0.70    0.71    13.1
@@ -2031,9 +2031,9 @@ It is possible to *zoom* into the profile graph. This is done either by using
 the scroll wheel / scroll gesture of your mouse or trackpad. By default
 _Subsurface_ always shows a profile area large enough for at least 30 minutes
 and 30m
- (100ft) – this way short or shallow dives are intuitively recognizable;
+ (100ft) ??? this way short or shallow dives are intuitively recognizable;
 something
-that free divers clearly won’t care about.
+that free divers clearly won???t care about.
 
 image::images/MeasuringBar.png["FIGURE: Measuring Bar",align="center"]
 
@@ -2074,7 +2074,7 @@ It is also quite common that _Subsurface_ calculates a ceiling for
 non-decompression dives when the dive computer stayed in non-deco mode during
 the whole dive (represented by the [green]#dark green# section in the profile
 at the beginning of this section). This is caused by the fact that
-_Subsurface’s_
+_Subsurface???s_
 calculations describe the deco obligation at each moment during a dive,
 while dive computers usually take the upcoming ascent into account. During the
 ascent some excess nitrogen (and possibly helium) are already breathed off so
@@ -2098,7 +2098,7 @@ a particular dive (*A* in figure below). This setting can be modified in two way
 [icon="images/icons/ceiling2.jpg"]
 [NOTE]
 If, in addition, the *show all tissues* button on the Profile Panel is clicked, the ceiling is shown for the tissue
-compartments following the Bühlmann model (*B* in figure below).
+compartments following the B??hlmann model (*B* in figure below).
 
 [icon="images/icons/ceiling3.jpg"]
 [NOTE]
@@ -2121,7 +2121,7 @@ image::images/ShowCylinders_f20.jpg["Figure: Cylinder use graph",align="center"]
 
 [NOTE]
 Display inert gas tissue pressures relative to ambient inert gas pressure (horizontal grey line).
-Tissue pressures are calculated using the Bühlmann ZH-L16 algorithm and are displayed as lines ranging from
+Tissue pressures are calculated using the B??hlmann ZH-L16 algorithm and are displayed as lines ranging from
 green (faster tissues) to blue (slower tissues).
 The black line, graphed above the ambient pressure, is the maximum allowable tissue supersaturation (pressure limit) derived
 from the gradient factors specified in the *Preferences*. For
@@ -2191,7 +2191,7 @@ ascent/descent rate, surface air consumption (SAC), oxygen partial pressure,
 maximum operating depth, equivalent air depth (EAD), equivalent narcotic depth
 (END), equivalent air density depth (EADD), decompression requirements at that
 instant in time (Deco), time to surface (TTS), the calculated ceiling, as well
-as the calculated ceiling for several Bühlmann tissue compartments.
+as the calculated ceiling for several B??hlmann tissue compartments.
 
 The user has control over the display of several statistics, represented as four
 buttons on the left of the profile panel. These are:
@@ -2265,7 +2265,7 @@ image::images/GasPressureBarGraph.jpg["FIGURE:Gas Pressure bar Graph",align="cen
   bottom of the graph to the total gas pressure value.
 
 - The dark green area at the bottom of the graph represents the pressures of inert gas in each
-  of the 16 tissue compartments, following the Bühlmann algorithm, the fast tissues being on the
+  of the 16 tissue compartments, following the B??hlmann algorithm, the fast tissues being on the
   left hand side.
 
 - The top black horizontal line indicates the gradient factor that applies to the depth of
@@ -2273,7 +2273,7 @@ image::images/GasPressureBarGraph.jpg["FIGURE:Gas Pressure bar Graph",align="cen
   interpolation between the FGLow and GFHigh values specified in the Graph tab of the *Preferences
   Panel* of *Subsurface*.
 
-- The bottom margin of the red area in the graph indicates the Bühlman-derived M-value, that is the
+- The bottom margin of the red area in the graph indicates the B??hlman-derived M-value, that is the
   pressure value of inert gases at which bubble formation is expected to be severe, resulting
   in decompression sickness.
 
@@ -2975,7 +2975,7 @@ for more information.
 == The _Subsurface_ dive planner
 Dive planning is an advanced feature of _Subsurface_, accessible by selecting
 _Log ->  Plan Dive_ from the main menu. It allows calculation of
-nitrogen load during a dive by using the Bühlmann ZH-L16 algorithm with the addition
+nitrogen load during a dive by using the B??hlmann ZH-L16 algorithm with the addition
 of gradient factors as implemented by Erik Baker.
 
 ****
@@ -3100,7 +3100,7 @@ the nitrogen load incurred during previous dives.
   divers.
 
 The dive profile in the planner indicates the maximum dive time within no-deco limits using the
-Bühlmann ZH-L16 algorithm and the gas and depth settings specified as described above. The _Subsurface_ planner
+B??hlmann ZH-L16 algorithm and the gas and depth settings specified as described above. The _Subsurface_ planner
 allows rapid assessment of dive duration as a function of dive depth, given the nitrogen load incurred during previous dives. The
 dive plan includes estimates of the amount of air/gas used, depending on the cylinder settings specified
 under _Available gases_. If the initial cylinder pressure is set to 0, the dive duration shown is the
@@ -3392,6 +3392,25 @@ dealing with the appropriate operations.
 - <<S_UserSurvey,_User survey_>>  - Help to make _Subsurface_ even better by taking part in our user survey.
 - _User manual_ - Open a window showing this user manual.
 
+
+== Mobile Version
+
+_Subsurface_ has a mobile version, which can be used to view the dives stored in the user's cloud account.
+
+=== How to use the mobile version
+When you first open the mobile app, you will have to log into your cloud account. To do this, click on the
+menu icon on the upper right, then click on preferences. Enter your cloud email and password, then click on
+save. 
+
+To load dives the first time, click on the menu icon, and then click on _Load Dives_. This will fetch the dive
+list from the cloud storage onto your device. On subsequent runs, the divelist will be loaded automatically
+when you open the app.
+
+To view dive details, tap on any dive in the dive list. This will open the dive details window, which shows the
+dive profile and below it, the dive details. Any of the dive details can be changed.
+
+To save changes made to the dive details, click on the back icon, then from the menu select _Save Changes_. This
+will save your changes to the cloud storage.
 
 
 == APPENDIX A: Operating system specific information for importing dive information from a dive computer.
@@ -4115,7 +4134,7 @@ that your dive is 50 minutes long - because you have fifty minutes worth of samp
 subsurface will say it's 45 minutes - because you were actually diving for 45 minutes.
 It's even more noticeable if you do things like divemastering the initial OW dives, when
 you may stay in the water for a long time, but spend most of it at the surface. And then
-you don't want that to count as some kind of long dive”.
+you don't want that to count as some kind of long dive???.
 
 === Some dive profiles are missing from the download
 
